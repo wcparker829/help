@@ -1,4 +1,3 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
@@ -82,10 +81,4 @@ If you want to make a build for deployment, use Gatsby's CLI
 ```sh
 gatsby build
 ```
-or
 
-```sh
-gatsby build
-```
-
-<!-- AUTO-GENERATED-CONTENT:END -->
