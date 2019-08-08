@@ -10,7 +10,7 @@
 [Pages](#pages)<br>
 [Components](#components)<br>
 [Utils](#utils)<br>
-[]()
+[Helpful Links](#helpful-links)
 
 # Gatsby stuff (edited)
 
@@ -129,7 +129,7 @@ Note: The headers below all start with a capital letter because the name of each
 
 ### AccountInfo
 
-This component requires an Account object as props that. It then takes that account and uses the [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/) to get a list of subscriptions for that apim account. This comnponent includes a table with the first name, last name, and email address for the account as well as a [SubscriptionsList](#subscriptionslist) component that it passes the list of subscriptions to.
+This component requires an Account object as props that. It then takes that account and uses the [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/) to get an array of subscriptions for that apim account. This comnponent includes a table with the first name, last name, and email address for the account as well as a [SubscriptionsList](#subscriptionslist) component that it passes the array of subscriptions to.
 
 ### ApisList
 
@@ -157,7 +157,27 @@ This component uses the [Management API](https://docs.microsoft.com/en-us/rest/a
 
 ### SubscriptionConfirmation
 
-This component recieves both an Account object and a Product object as props. This component makes a [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/) call that returns the subscriptions tied to the account. If the account already has a subscription to that product then this component displays the sentence "{firstName} {lastName} already has a subscription to {displayName}." Otherwise, this component asks if the user wants to confirm this subscription and offers Yes and No buttons. The Yes button sends a PUT request through the [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/) and creates the new subscription. The No button is currently not functional. :( 
+This component recieves both an Account object and a Product object as props. This component makes a [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/) call that returns the subscriptions tied to the account. If the account already has a subscription to that product then this component displays the sentence "{firstName} {lastName} already has a subscription to {displayName}." Otherwise, this component asks if the user wants to confirm this subscription and offers Yes and No buttons. The Yes button sends a PUT request through the [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/) and creates the new subscription. The No button is currently not functional.
 
 ### SubscriptionsList
 
+This component takes an array of Subscription objects as props and returns a table that has each subscription and both the primary and secondary keys with the option to hide or show them. There is also a button by each key to regenerate it, but it isn't functional.
+
+## Utils 
+
+There are two files in the utils folder but one is not used by the program at all (auth.js).
+
+### apim-info
+
+This file contains all of the information needed to make a call via the [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/). It exports all of that information so that the pages and components that need it can import it as needed. This also makes it easier to switch the site over to a different apim instance as you only have to change the information in one file instead of every file that utilizes the [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/).
+
+## Helpful Links
+
+[API Management Documentation](https://docs.microsoft.com/en-us/azure/api-management/)<br>
+[Wegman's Video](https://mybuild.techcommunity.microsoft.com/sessions/77064)<br>
+[Build a CI/CD pipeline for API Management](https://azure.microsoft.com/en-us/blog/build-a-ci-cd-pipeline-for-api-management/)<br>
+[How to delegate user registration and product subscription](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-setup-delegation)<br>
+[Using external services from Azure API Management](https://docs.microsoft.com/en-us/azure/api-management/api-management-sample-send-request)<br>
+[API Management caching policies](https://docs.microsoft.com/en-us/azure/api-management/api-management-caching-policies)<br>
+[API Management advanced policies](https://docs.microsoft.com/en-us/azure/api-management/api-management-advanced-policies)<br>
+[Authentication options when using the Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/apimanagementrest/azure-api-management-rest-api-authentication)
