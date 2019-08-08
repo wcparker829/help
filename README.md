@@ -2,7 +2,8 @@
 
 #### Table of Contents
 [Gatsby stuff](#gatsby-stuff)
-    -[Quick Start](#quick-start)
+    
+    [Quick Start](#quick-start)
     -[What's Inside](#whats-inside)
     -[Learning Gatsby](#learning-gatsby)
     -[Deploy](#deploy)
