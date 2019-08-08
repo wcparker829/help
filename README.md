@@ -2,10 +2,10 @@
 
 #### Table of Contents
 [Gatsby stuff](#gatsby-stuff)<br>
-| -[Quick Start](#quick-start)<br>
-| -[What's Inside](#whats-inside)<br>
-| -[Learning Gatsby](#learning-gatsby)<br>
-| -[Deploy](#deploy)<br>
+<li>[Quick Start](#quick-start)<br>
+<li>[What's Inside](#whats-inside)<br>
+<li>[Learning Gatsby](#learning-gatsby)<br>
+<li>[Deploy](#deploy)<br>
 [My Stuff](#my-stuff)<br>
 | -[Pages](#pages)<br>
 | -[Components](#components)
