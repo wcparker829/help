@@ -2,10 +2,10 @@
 
 ### Table of Contents
 [Gatsby stuff](#gatsby-stuff)<br>
-[Quick Start](#quick-start)<br>
-[What's Inside](#whats-inside)<br>
-[Learning Gatsby](#learning-gatsby)<br>
-[Deploy](#deploy)<br>
+[*Quick Start](#quick-start)<br>
+[*What's Inside](#whats-inside)<br>
+[*Learning Gatsby](#learning-gatsby)<br>
+[*Deploy](#deploy)<br>
 
 [My Stuff](#my-stuff)<br>
 [Pages](#pages)<br>
@@ -126,6 +126,8 @@ This page was not finished to include user auth because there is currently no ti
 
 ## Components 
 
+Note: The headers below all start with a capital letter because the name of each component starts with a capital letter. The files however in the components folder are named in camelCase while the files in the pages folder are named in lower-case-with-hypens.
+
 ### AccountInfo
 
 This component requires an Account object as props that. It then takes that account and uses the [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/) to get a list of subscriptions for that apim account. This comnponent includes a table with the first name, last name, and email address for the account as well as a [SubscriptionsList](#subscriptionslist) component that it passes the list of subscriptions to.
@@ -150,4 +152,13 @@ This component takes the Operation object passed as props and creates an h2 elem
 
 This component takes the API object passed as props and then makes an [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/) call to get all an array of all of the Operations that are defined for that API object in apim. This component iterates over this array to display each operation and it's method in an aside on the left-hand side of the screen. This component also creates an [OperationDetails](#operationdetails) component to the right of the aside. The default Operation object passed to the **OperationDetails** component is the operation at index 0 in the array of operations. Each operation in the aside is a button that can be clicked to change the Operation object that is passed to the **OperationDetails** component.
 
-###
+### ProductList
+
+This component uses the [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/) to get an array of Products from apim for the instance and then list them as a button-title and a description with a [Gatsby Link](https://www.gatsbyjs.com/doc/gatsby-link) subscribe "button" that goes to the [account page](#account). This component also contains an aside on the right-hand side of the screen that contains a **ProductApis** component. The **ProductApis** component is in the same file because I forgot to seperate it before I ran out of time and is not used anywhere else. It uses the [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/) to get an array of APIs in a product and list them. It takes a Product object as props. It is passed the 0 index product as a defualt but the button-titles change what Product object is passed to it.
+
+### SubscriptionConfirmation
+
+This component recieves both an Account object and a Product object as props. This component makes a [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/) call that returns the subscriptions tied to the account. If the account already has a subscription to that product then this component displays the sentence "{firstName} {lastName} already has a subscription to {displayName}." Otherwise, this component asks if the user wants to confirm this subscription and offers Yes and No buttons. The Yes button sends a PUT request through the [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/) and creates the new subscription. The No button is currently not functional. :( 
+
+### SubscriptionsList
+
