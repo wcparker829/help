@@ -89,7 +89,7 @@ If you want to make a build for deployment, use Gatsby's CLI
 gatsby build
 ```
 
-
+---
 
 # My Stuff 
 
@@ -122,6 +122,8 @@ This page only contains the [ProductList](#productlist) component.
 ### account 
 
 This page was not finished to include user auth because there is currently no tie between apim user accounts and Bentley accounts. It uses the [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/) to get all of the users from an apim instance and provides a selector so that you can select whichever you want. It then passes the selected account as props to the [AccountInfo](#accountinfo) component. This page is also the home of a [SubscriptionConfirmation](#subscriptionconfirmation) component when the page is navigated to through the subscribe link on the products page and an account has been selected.
+
+---
 
 ## Components 
 
@@ -170,6 +172,8 @@ There are two files in the utils folder but one is not used by the program at al
 ### apim-info
 
 This file contains all of the information needed to make a call via the [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/). It exports all of that information so that the pages and components that need it can import it as needed. This also makes it easier to switch the site over to a different apim instance as you only have to change the information in one file instead of every file that utilizes the [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/).
+
+---
 
 ## Helpful Links
 
