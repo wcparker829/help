@@ -1,3 +1,15 @@
+# Will's JAMstack site
+
+#### Table of Contents
+[Gatsby stuff](#gatsby-stuff)
+*[Quick Start](#quick-start)
+*[What's Inside](#whats-inside)
+*[Learning Gatsby](#learning-gatsby)
+*[Deploy](#deploy)
+[My Stuff](#my-stuff)
+*[Pages](#pages)
+*[Components](#components)
+
 # Gatsby stuff (edited)
 
 Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
@@ -77,7 +89,7 @@ gatsby build
 
 
 
-# New Stuff 
+# My Stuff 
 
 This is a very simple take on Azure API Management's Developer Portal built with the help of GatsbyJS.
 
@@ -85,20 +97,28 @@ This is a very simple take on Azure API Management's Developer Portal built with
 
 A brief description of some of the pages that are found in the src folder, including links where appropiate.
 
-#### Index 
+#### index 
 
 This page is home to the sign in feature and nothing else. I used oidc-client-js to integrate OIDC through a UserManager object so that users could be authenticated by Bentley. It stores the returned information in localStorage and appends some information to the URL.[Here is the documentation for oidc-client-js.](https://github.com/IdentityModel/oidc-client-js/wiki)
 
-#### Testing
+#### testing
 
 This page gets the serviceUrl from apim for one of the apis (I chose the Management API because it had a backend that worked) and then makes a call to that api (in this case to get a list of apis in my apim instance) and logs the results to the console.
 
-#### Apis 
+#### apis 
 
 This only contains the [ApisList](#apislist) component.
+
+#### api-details
+
+This page is only accessed through one of the links that are on the apis page. This page also has a selector so that the details of different apis can be viewed. It contains [OperationsList](#operationslist) component that is passed the selected or default api as props.
+
+#### products
+
+This page only contains the [ProductList](#productlist) component.
 
 ## Components 
 
 #### ApisList
 
-some words about apislist and such
+
