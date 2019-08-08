@@ -1,6 +1,6 @@
 # Will's JAMstack site
 
-#### Table of Contents
+### Table of Contents
 [Gatsby stuff](#gatsby-stuff)<br>
 [Quick Start](#quick-start)<br>
 [What's Inside](#whats-inside)<br>
