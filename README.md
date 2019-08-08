@@ -1,8 +1,8 @@
 # Will's JAMstack site
 
 #### Table of Contents
-[Gatsby stuff](#gatsby-stuff)
-\n[Quick Start](#quick-start)
+[Gatsby stuff](#gatsby-stuff)<br>
+[Quick Start](#quick-start)
 [What's Inside](#whats-inside)
 [Learning Gatsby](#learning-gatsby)
 [Deploy](#deploy)
