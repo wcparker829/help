@@ -75,5 +75,18 @@ If you want to make a build for deployment, use Gatsby's CLI
 gatsby build
 ```
 
+
+
 # New Stuff 
+
+This is a very simple take on Azure API Management's Developer Portal built with the help of GatsbyJS.
+
+## Pages 
+
+A brief description of some of the pages that are found in the src folder, including links where appropiate.
+
+#### Index 
+
+This page is home to the sign in feature and nothing else. I used oidc-client-js to integrate OIDC through a UserManager object so that users could be authenticated by Bentley. It stores the returned information in localStorage and appends some information to the URL. 
+-[Docs for oidc-client-js](https://github.com/IdentityModel/oidc-client-js/wiki)
 
