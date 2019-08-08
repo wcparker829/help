@@ -95,7 +95,7 @@ This page gets the serviceUrl from apim for one of the apis (I chose the Managem
 
 #### Apis 
 
-This only contains the [ApisList][#apislist] component.
+This only contains the [ApisList](#apislist) component.
 
 ## Components 
 
