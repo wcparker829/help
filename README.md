@@ -88,5 +88,6 @@ A brief description of some of the pages that are found in the src folder, inclu
 #### Index 
 
 This page is home to the sign in feature and nothing else. I used oidc-client-js to integrate OIDC through a UserManager object so that users could be authenticated by Bentley. It stores the returned information in localStorage and appends some information to the URL. 
--[Docs for oidc-client-js](https://github.com/IdentityModel/oidc-client-js/wiki)
+
+[Docs for oidc-client-js](https://github.com/IdentityModel/oidc-client-js/wiki)
 
