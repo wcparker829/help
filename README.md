@@ -87,7 +87,18 @@ A brief description of some of the pages that are found in the src folder, inclu
 
 #### Index 
 
-This page is home to the sign in feature and nothing else. I used oidc-client-js to integrate OIDC through a UserManager object so that users could be authenticated by Bentley. It stores the returned information in localStorage and appends some information to the URL. 
+This page is home to the sign in feature and nothing else. I used oidc-client-js to integrate OIDC through a UserManager object so that users could be authenticated by Bentley. It stores the returned information in localStorage and appends some information to the URL.[Here is the documentation for oidc-client-js.](https://github.com/IdentityModel/oidc-client-js/wiki)
 
-[Docs for oidc-client-js](https://github.com/IdentityModel/oidc-client-js/wiki)
+#### Testing
 
+This page gets the serviceUrl from apim for one of the apis (I chose the Management API because it had a backend that worked) and then makes a call to that api (in this case to get a list of apis in my apim instance) and logs the results to the console.
+
+#### Apis 
+
+This only contains the [ApisList][#apislist] component.
+
+## Components 
+
+#### ApisList
+
+some words about apislist and such
