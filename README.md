@@ -100,52 +100,54 @@ This is a very simple take on Azure API Management's Developer Portal built with
 
 A brief description of some of the pages that are found in the src folder, including links where appropiate.
 
-#### index 
+### index 
 
 This page is home to the sign in feature and nothing else. I used oidc-client-js to integrate OIDC through a UserManager object so that users could be authenticated by Bentley. It stores the returned information in localStorage and appends some information to the URL.[Here is the documentation for oidc-client-js.](https://github.com/IdentityModel/oidc-client-js/wiki)
 
-#### testing
+### testing
 
 This page gets the serviceUrl from apim for one of the apis (I chose the [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement) because it had a backend that worked) and then makes a call to that api (in this case to get a list of apis in my apim instance) and logs the results to the console.
 
-#### apis 
+### apis 
 
 This only contains the [ApisList](#apislist) component.
 
-#### api-details
+### api-details
 
 This page is only accessed through one of the links that are on the apis page. This page also has a selector so that the details of different apis can be viewed. It contains [OperationsList](#operationslist) component that is passed the selected or default api as props.
 
-#### products
+### products
 
 This page only contains the [ProductList](#productlist) component.
 
-#### account 
+### account 
 
 This page was not finished to include user auth because there is currently no tie between apim user accounts and Bentley accounts. It uses the [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/) to get all of the users from an apim instance and provides a selector so that you can select whichever you want. It then passes the selected account as props to the [AccountInfo](#accountinfo) component. This page is also the home of a [SubscriptionConfirmation](#subscriptionconfirmation) component when the page is navigated to through the subscribe link on the products page and an account has been selected.
 
 ## Components 
 
-#### AccountInfo
+### AccountInfo
 
 This component requires an Account object as props that. It then takes that account and uses the [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/) to get a list of subscriptions for that apim account. This comnponent includes a table with the first name, last name, and email address for the account as well as a [SubscriptionsList](#subscriptionslist) component that it passes the list of subscriptions to.
 
-#### ApisList
+### ApisList
 
 This component makes a [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/) call to get an array of APIs in an apim instance. It displays each API in a div with a [Gatsby Link](https://www.gatsbyjs.org/docs/gatsby-link/) that has the display name of the API and then either the description inside of an [Md](#md) component or the statement "No Description Available."
 
-#### Header 
+### Header 
 
 This component is on every page and just include a title and a navbar made of [Gatsby Links](https://www.gatsbyjs.org/docs/gatsby-link/).
 
-#### Md 
+### Md 
 
 The description of ComponentsCenterService that came from the json file upload that I did was in Markdown so I wrote this component to make a couple of easy changes so that it would display closer to what it should. This component was specifically built so that it would only fix the ComponentsCenterService description without breaking the descriptions of anything else that I had at the time. It is very simple and doesn't do much.
 
-#### OperationDetails 
+### OperationDetails 
 
 This component takes the Operation object passed as props and creates an h2 element with the operation's display name and a line of buttons for the request and each response defined in apim. These buttons when clicked change the display in the box immediately below them with details about parameters and headers for the request or the description provided with each response. This component never got fully completed, however it is still functional.
 
-#### OperationsList 
+### OperationsList 
 
 This component takes the API object passed as props and then makes an [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement/) call to get all an array of all of the Operations that are defined for that API object in apim. This component iterates over this array to display each operation and it's method in an aside on the left-hand side of the screen. This component also creates an [OperationDetails](#operationdetails) component to the right of the aside. The default Operation object passed to the **OperationDetails** component is the operation at index 0 in the array of operations. Each operation in the aside is a button that can be clicked to change the Operation object that is passed to the **OperationDetails** component.
+
+###
