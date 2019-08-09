@@ -13,19 +13,34 @@
 [Helpful Links](#helpful-links)
 
 # Gatsby stuff (edited)
+(now includes Github stuff as well)
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
-
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+This has been heavily edited to match the changes I've made.
 
 ## 🚀 Quick start
 
+1.  **Downloading the site**
+
+    I just uploaded the zip folder to this repository. The first thing you should do is download the zip folder and extract everything. Whenever you make the repository for it that you said I didn't need to create, you can just steal this README and change this part to say "clone the repository."
+    
+    ```sh
+    git clone <repository-url>
+    ```
+
 1.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+    Navigate into your extracted folder, then install the dependencies.
 
     ```sh
-    cd my-hello-world-starter/
+    cd dev-portal
+    npm install
+    ```
+    
+    This should install oidc-client too, so you are all set.
+    
+    Next use Gatsby's CLI to start up the site
+    
+    ```sh
     gatsby develop
     ```
 
@@ -35,7 +50,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Changes that are saved in any of the files will be reflected in real time in your browser.
 
 ## 🧐 What's inside?
 
