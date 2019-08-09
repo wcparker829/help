@@ -1,12 +1,12 @@
 # Will's JAMstack site
 
 ### Table of Contents
-[**Gatsby stuff**](#gatsby-stuff)<br>
+**[Gatsby stuff](#gatsby-stuff)**<br>
 [Quick Start](#quick-start)<br>
 [What's Inside](#whats-inside)<br>
 [Learning Gatsby](#learning-gatsby)<br>
 [Deploy](#deploy)<br>
-[**My Stuff**](#my-stuff)<br>
+**[My Stuff](#my-stuff)**<br>
 [Pages](#pages)<br>
 [Components](#components)<br>
 [Utils](#utils)<br>
@@ -92,7 +92,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 9. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-10. **`README.md`**: A text file containing useful reference information about your project.
+10. **`README.md`**: This is the basic Gatsby hello-world-project README file, not this one.
 
 ## 🎓 Learning Gatsby
 
@@ -130,11 +130,11 @@ A brief description of some of the pages that are found in the src folder, inclu
 
 ### index 
 
-This page is home to the sign in feature and nothing else. I used oidc-client-js to integrate OIDC through a UserManager object so that users could be authenticated by Bentley. It stores the returned information in localStorage and appends some information to the URL.[Here is the documentation for oidc-client-js.](https://github.com/IdentityModel/oidc-client-js/wiki)
+This page is home to the sign in feature and nothing else. I used oidc-client-js to integrate OIDC through a UserManager object so that users could be authenticated by Bentley. It stores the returned information in localStorage and appends some information to the URL. [Here is the documentation for oidc-client-js.](https://github.com/IdentityModel/oidc-client-js/wiki)
 
 ### testing
 
-This page gets the serviceUrl from apim for one of the apis (I chose the [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement) because it had a backend that worked) and then makes a call to that api (in this case to get a list of apis in my apim instance) and logs the results to the console.
+This page gets the serviceUrl *(url of the backend service)* from apim for one of the apis (I chose the [Management API](https://docs.microsoft.com/en-us/rest/api/apimanagement) because it had a backend that worked) and then makes a call to that api (in this case to get a list of apis in my apim instance) and logs the results to the console.
 
 ### apis 
 
