@@ -104,7 +104,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-So you want to deploy this to a [static site](), try this:
+So you want to deploy this to a [static site](https://myjamstackstorage.z13.web.core.windows.net/), try this:
 
 ```sh
 gatsby build
