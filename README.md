@@ -104,11 +104,19 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-If you want to make a build for deployment, use Gatsby's CLI
+So you want to deploy this to a [static site](), try this:
 
 ```sh
 gatsby build
 ```
+
+or 
+
+```sh
+npm run build
+```
+
+This should generate all of the files for your static site and store them in the public folder.
 
 ---
 
