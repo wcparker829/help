@@ -38,10 +38,16 @@ This has been heavily edited to match the changes I've made.
     
     This should install oidc-client too, so you are all set.
     
-    Next use Gatsby's CLI to start up the site
+    Next you want to start up your site.
     
     ```sh
     gatsby develop
+    ```
+    
+    or
+    
+    ```sh
+    npm run start
     ```
 
 1.  **Open the source code and start editing!**
