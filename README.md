@@ -92,7 +92,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 9. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-10. **`README.md`**: This is the basic Gatsby hello-world-project README file, not this one.
+10. **`README.md`**: The basic Gatsby hello-world-project README file, not this README.
 
 ## 🎓 Learning Gatsby
 
@@ -156,7 +156,7 @@ This page was not finished to include user auth because there is currently no ti
 
 ## Components 
 
-Note: The headers below all start with a capital letter because the name of each component starts with a capital letter. The files however in the components folder are named in camelCase while the files in the pages folder are named in lower-case-with-hypens.
+**Note:** *The headers below all start with a capital letter because the name of each component starts with a capital letter. The files however in the components folder are named in camelCase while the files in the pages folder are named in lower-case-with-hypens.*
 
 ### AccountInfo
 
@@ -196,7 +196,7 @@ This component takes an array of Subscription objects as props and returns a tab
 
 ## Utils 
 
-There are two files in the utils folder but one is not used by the program at all (auth.js).
+*There are two files in the utils folder but one is not used by the program at all (auth.js).*
 
 ### apim-info
 
