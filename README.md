@@ -3,15 +3,15 @@
 ### Table of Contents
 
 - **[Gatsby stuff](#gatsby-stuff)**
-- [Quick Start](#quick-start)
-- [What's Inside](#whats-inside)
-- [Learning Gatsby](#learning-gatsby)
-- [Deploy](#deploy)
+    - [Quick Start](#quick-start)
+    - [What's Inside](#whats-inside)
+    - [Learning Gatsby](#learning-gatsby)
+    - [Deploy](#deploy)
 - **[My Stuff](#my-stuff)**
-- [Pages](#pages)
-- [Components](#components)
-- [Utils](#utils)
-- [Helpful Links](#helpful-links)
+    - [Pages](#pages)
+    - [Components](#components)
+    - [Utils](#utils)
+    - [Helpful Links](#helpful-links)
 
 # Gatsby stuff (edited)
 (now includes Github stuff as well)
